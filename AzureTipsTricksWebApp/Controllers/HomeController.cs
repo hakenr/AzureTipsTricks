@@ -31,5 +31,16 @@ namespace AzureTipsTricksWebApp.Controllers
 
 			return View();
 		}
+
+		public ActionResult Hang()
+		{
+			var start = DateTime.Now;
+			while (start.AddSeconds(30) > DateTime.Now)
+			{
+				var x = Math.Sqrt(DateTime.Now.Ticks);
+			}
+
+			return View();
+		}
 	}
 }
