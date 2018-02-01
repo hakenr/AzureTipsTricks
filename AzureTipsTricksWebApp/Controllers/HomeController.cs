@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -10,6 +11,10 @@ namespace AzureTipsTricksWebApp.Controllers
 	{
 		public ActionResult Index()
 		{
+			Trace.TraceInformation("Hello from AzureTipsTricks demo!");
+			Trace.TraceWarning("This is a warning...");
+			Trace.TraceError("This is an error.");
+
 			return View();
 		}
 
