@@ -42,5 +42,12 @@ namespace AzureTipsTricksWebApp.Controllers
 
 			return View();
 		}
+
+		public ActionResult Exception()
+		{
+			throw new DemoException("Something bad happened.");
+
+			return View();
+		}
 	}
 }
